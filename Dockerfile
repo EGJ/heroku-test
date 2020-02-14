@@ -1,1 +1,3 @@
-zkServer.sh start-foreground
+FROM zookeeper:latest
+
+ADD ./zooconf.conf /conf/zoo.cfg
