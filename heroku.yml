@@ -1,0 +1,5 @@
+uild:
+  docker:
+    web: Dockerfile
+run:
+  web: zkServer.sh start-foreground
