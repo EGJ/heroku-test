@@ -1,3 +1,5 @@
 build:
   docker:
     web: Dockerfile
+run:
+  web: docker run zookeeper -p 2181:$PORT
