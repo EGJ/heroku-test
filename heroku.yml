@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: docker run zookeeper -p 2181:$PORT
+  web: zkServer.sh start-foreground /conf/zoo.cfg
