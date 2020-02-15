@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: zkServer.sh start-foreground
+  web: zkServer.sh start-foreground /conf/zoo.cfg
