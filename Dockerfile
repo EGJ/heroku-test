@@ -1,5 +1,3 @@
 FROM zookeeper:latest
 
-ADD ./zooconf.conf /conf/zoo.cfg
-
-CMD gunicorn --bind 0.0.0.0:$PORT wsgi
+CMD docker run zookeeper -p 2181:$PORT
